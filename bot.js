@@ -43,12 +43,11 @@ client.on('message', async message => {
 	if (dcMessage.search(/pam/i) != -1)
 		message.channel.send("Dunder Mifflin this is Pam");
 
-	
 	if (dcMessage.search(/dwight/i) != -1)
 		message.channel.send("Bears, beets, Battlestar Galactica");
 	
 	
-	//#region
+	// #region
 	/* function makeRandom(length) {
    var result           = '';
    var characters       = 'HA';
@@ -58,5 +57,5 @@ client.on('message', async message => {
    }
    return result;
    } */
-   //#endregion
+   // #endregion
 });
