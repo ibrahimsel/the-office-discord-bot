@@ -49,31 +49,33 @@ client.on('message', async message => {
 	switch (dcMessage)
 	{
 		case "!help":
-			message.channel.send("!list: list of current quotes\n",
-					     "!author: outputs info about the author of this bot\n");
+			message.channel.send("!list: list of current quotes\n" +
+								 "!author: outputs info about the author of this bot\n");
 			break;
 
 		case "!list":
-			message.channel.send("Current quotes:\n\n", 
-							 "Michael Scott\n-------\n", 
-							 "1-) alcohol\n2-) bankruptcy\n3-) britney",
-							 "\n4-) calm\n5-) deadinside\n6-) godno",
-							 "\n7-) idiot\n8-) ignorantslut\n9-) illkillyou",
-							 "\n10-) kms\n11-) turtles\n12-) wellwell",
-							 "\n13-) whyareyou",
-							 "\nDwight Schrute\n-------\n",
-							 "\n1-) depression\n2-) perfektenschlag\n3-) perfektenschlag_right",
-							 "\n4-) perfektenschlag_left\n5-) procedure",
-							 "\nRobert California\n-------\n",
-							 "1-) imfine\n2-) lizardking\n3-) oof",
-							 "\n4-) sexuality",
-							 "\nOthers\n-------\n",
-							 "1-) effectonwoman\n2-) kelly_slut\n3-) ryan_bitch",
+			message.channel.send("Current quotes:\n\n" + 
+							 "Michael Scott\n-------\n" + 
+							 "1-) alcohol\n2-) bankruptcy\n3-) britney" +
+							 "\n4-) calm\n5-) deadinside\n6-) godno" +
+							 "\n7-) idiot\n8-) ignorantslut\n9-) illkillyou" +
+							 "\n10-) kms\n11-) turtles\n12-) wellwell" +
+							 "\n13-) whyareyou" +
+							 "\nDwight Schrute\n-------\n" +
+							 "\n1-) depression\n2-) perfektenschlag\n3-) perfektenschlag_right" +
+							 "\n4-) perfektenschlag_left\n5-) procedure" +
+							 "\nRobert California\n-------\n" +
+							 "1-) imfine\n2-) lizardking\n3-) oof" +
+							 "\n4-) sexuality" +
+							 "\nOthers\n-------\n" +
+							 "1-) effectonwoman\n2-) kelly_slut\n3-) ryan_bitch" +
 							 "\n4-) sun\n5-) theme");
 			break;
+			
 		
 		case "!author":
-			message.channel.send("*************\nName: Ibrahim Sel\nJob: Artificial Intelligence Specialist\n*************")
+			message.channel.send("*************\nNAME: Ibrahim Sel\nJOB: Aspiring Artificial Intelligence Specialist\n*************")
+	
 	}
 });
 client.login(your_token);
