@@ -34,8 +34,7 @@ client.on('message', async message => {
 		dcMessage = dcMessage.replace(/İ/g, "I");
 	
 	if (dcMessage == "!help")
-		message.channel.send('!audio: list of current audio files' + 
-		                      "!");
+		message.channel.send('!audio: list of current audio files')
 
 	if (dcMessage == "!audio")
 		message.channel.send("Current audio files: kms, theme");
@@ -45,17 +44,4 @@ client.on('message', async message => {
 
 	if (dcMessage.search(/dwight/i) != -1)
 		message.channel.send("Bears, beets, Battlestar Galactica");
-	
-	
-	// #region
-	/* function makeRandom(length) {
-   var result           = '';
-   var characters       = 'HA';
-   var charactersLength = characters.length;
-   for ( var i = 0; i < length; i++ ) {
-      result += characters.charAt(Math.floor(Math.random() * charactersLength));
-   }
-   return result;
-   } */
-   // #endregion
 });
