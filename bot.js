@@ -3,6 +3,7 @@ const client = new Discord.Client();
 
 client.once('ready', () => {
 	console.log('Ready!');
+	// console.log(current_audio_files.length);
 });
 
 client.on('message', async message => {
@@ -23,7 +24,7 @@ client.on('message', async message => {
 							    "prostate", "babyback", "ohh", "sleepwithhim", "waterisfine", "chicken", 
 								"justlostaclient", "waa", "woo", "dancinginthegym", "dammit", "itsmichael",
 							    "puke", "ayy", "no", "skeletonman"]
-	// console.log(current_audio_files.length);
+	
 
 	if (current_audio_files.includes(dcMessage) && message.member.voice.channel)
 	{
