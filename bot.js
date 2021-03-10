@@ -15,8 +15,15 @@ client.on('message', async message => {
 							    "sexuality", "idiot", "perfektenschlag", "perfektenschlag_left",
 							    "perfektenschlag_right", "britney", "bankruptcy", "kelly_slut",
 						 	    "wellwell", "turtles", "whyareyou", "calm", "procedure",
-							    "deadinside", "effectonwoman", "depression", "ignorantslut",
-							    "sun"]
+							    "deadinside", "effectonwomen", "depression", "ignorantslut",
+							    "sun", "alcohol", "hurt", "guidance", "nooneasked", 
+							    "friendship", "delusion", "insidejokes", "ty", "beyonce", "badumts",
+							    "nobodycares", "hero", "roasted", "stutter", "identity", 
+							    "bs", "mylife", "dancing", "hentai", "boyhaveyou", "welcoming", "scranton", 
+							    "prostate", "babyback", "ohh", "sleepwithhim", "waterisfine", "chicken", 
+								"justlostaclient", "waa", "woo", "dancinginthegym", "dammit", "itsmichael",
+							    "puke", "ayy", "no", "skeletonman"]
+	// console.log(current_audio_files.length);
 
 	if (current_audio_files.includes(dcMessage) && message.member.voice.channel)
 	{
@@ -49,32 +56,43 @@ client.on('message', async message => {
 	switch (dcMessage)
 	{
 		case "!help":
-			message.channel.send("!list: list of current quotes\n" +
+			message.channel.send("\n!list: list of current quotes\n" +
 								 "!author: outputs info about the author of this bot\n");
 			break;
 
 		case "!list":
-			message.channel.send("Current quotes:\n\n" + 
+			message.channel.send("\nCurrent quotes:\n\n" + 
 							 "Michael Scott\n-------\n" + 
-							 "1-) alcohol\n2-) bankruptcy\n3-) britney" +
-							 "\n4-) calm\n5-) deadinside\n6-) godno" +
-							 "\n7-) idiot\n8-) ignorantslut\n9-) illkillyou" +
-							 "\n10-) kms\n11-) turtles\n12-) wellwell" +
-							 "\n13-) whyareyou" +
+							 "1-) alcohol 2-) bankruptcy 3-) britney" +
+							 "\n4-) calm 5-) deadinside 6-) godno" +
+							 "\n7-) idiot 8-) ignorantslut 9-) illkillyou" +
+							 "\n10-) kms 11-) turtles 12-) wellwell" +
+							 "\n13-) whyareyou 14-) hurt 15-) guidance" +
+							 "\n16-) nooneasked 17-) insidejokes 18-) beyonce" +
+							 "\n19-) nobodycares 20-) hero 21-) roasted 22-) bs" +
+							 "\n23-) mylife 24-) dancing 25-) welcoming 26-) chicken" +
+							 "\n27-) itsmichael" + 
 							 "\nDwight Schrute\n-------\n" +
-							 "\n1-) depression\n2-) perfektenschlag\n3-) perfektenschlag_right" +
-							 "\n4-) perfektenschlag_left\n5-) procedure" +
+							 "1-) depression 2-) perfektenschlag 3-) perfektenschlag_right" +
+							 "\n4-) perfektenschlag_left 5-) procedure 6-) identity 7-) onecrisis" +
+							 "\n8-) ohh 9-) waterisfine 10-) puke 11-) no" +
 							 "\nRobert California\n-------\n" +
-							 "1-) imfine\n2-) lizardking\n3-) oof" +
+							 "1-) imfine 2-) lizardking 3-) oof" +
 							 "\n4-) sexuality" +
 							 "\nOthers\n-------\n" +
-							 "1-) effectonwoman\n2-) kelly_slut\n3-) ryan_bitch" +
-							 "\n4-) sun\n5-) theme");
+							 "1-) effectonwomen 2-) kelly_slut 3-) ryan_bitch" +
+							 "\n4-) sun 5-) theme 6-) friendship 7-) delusion 8-) ty" +
+							 "\n9-) badumts 10-) stutter 11-) hentai 12-) boyhaveyou" +
+							 "\n13-) scranton 14-) prostate 15-) babyback 16-) sleepwithhim" +
+							 "\n17-) justlostaclient 18-) woo 19-) dancinginthegym 20-) dammit" +
+							 "\n21-) ayy 22-) skeletonman");
 			break;
 			
 		
 		case "!author":
-			message.channel.send("*************\nNAME: Ibrahim Sel\nJOB: Aspiring Artificial Intelligence Specialist\n*************")
+			message.channel.send("\n*NAME: Ibrahim Sel\nJOB: Aspiring Artificial Intelligence Specialist*\n")
+	
+	}
 	
 	}
 });
