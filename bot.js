@@ -94,7 +94,6 @@ client.on('message', async message => {
 			message.channel.send("\n*NAME: Ibrahim Sel\nJOB: Aspiring Artificial Intelligence Specialist*\n")
 	
 	}
-	
 	}
 });
 client.login(your_token);
