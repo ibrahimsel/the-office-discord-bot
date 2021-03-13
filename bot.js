@@ -3,6 +3,7 @@ const client = new Discord.Client();
 
 client.once('ready', () => {
 	console.log('Ready!');
+        console.log('Ready!');
 	
 });
 
@@ -21,8 +22,8 @@ client.on('message', async message => {
 	
 	var current_audio_files = ["kms", "theme", "godno", "lizardking", "lemonhead",
                                 "oof", "imfine", "lemonhead", "ryan_bitch", 
-							    "sexuality", "idiot", "perfektenschlag", "perfektenschlag_left",
-							    "perfektenschlag_right", "britney", "bankruptcy", "kelly_slut",
+				"sexuality", "idiot", "perfektenschlag", "perfektenschlag_left",
+				"perfektenschlag_right", "britney", "bankruptcy", "kelly_slut",
 						 	    "wellwell", "turtles", "whyareyou", "calm", "procedure",
 							    "deadinside", "effectonwomen", "depression", "ignorantslut",
 							    "sun", "alcohol", "hurt", "guidance", "nooneasked", 
@@ -64,7 +65,7 @@ client.on('message', async message => {
 	
 	if (dcMessage.search(/dwight/i) != -1)
 		message.channel.send("Bears, beets, Battlestar Galactica");
-		*/
+        */
 	
 	switch (dcMessage)
 	{
