@@ -100,6 +100,7 @@ client.on('message', async message => {
 			break;
 		case "!author":
 			message.channel.send("\n*NAME: Ibrahim Sel\nJOB: Aspiring Artificial Intelligence Specialist*\n")
+			break;
 	
 	}
 });
