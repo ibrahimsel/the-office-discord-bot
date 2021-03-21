@@ -8,15 +8,15 @@ client.once('ready', () => {
 client.on('message', async message => {
 	if (message.author.bot) return;
 
-	const fs = require('fs')
+	/*const fs = require('fs')
 	fs.readFile('scores.txt', (err, data) => {
 		if (err) throw err;
 		console.log(data.toString());
 	})
-
+    */
 	var dcMessage = message.content;
 	var voiceChannel = message.member.voice.channel;
-	var audio_file = "mp3/" + dcMessage + ".mp3"
+	var audio_file = "Audio Files/" + dcMessage + ".mp3"
 	
 	var current_audio_files = ["kms", "theme", "godno", "lizardking", "lemonhead",
                                 "oof", "imfine", "lemonhead", "ryan_bitch", 
@@ -59,7 +59,6 @@ client.on('message', async message => {
 	/*
 	if (dcMessage.search(/pam/i) != -1)
 		message.channel.send("Dunder Mifflin this is Pam");
-
 	
 	if (dcMessage.search(/dwight/i) != -1)
 		message.channel.send("Bears, beets, Battlestar Galactica");
@@ -105,4 +104,4 @@ client.on('message', async message => {
 	}
 });
 
-client.login(your_token);
+client.login("NzcxMjg4NDA3NjQ1MjI0OTkx.X5p8Tg.yopRlKBEBx4kWEeGkkXVBXRUw6g");
