@@ -11,7 +11,7 @@ client.on('message', async message => {
 	var voiceChannel = message.member.voice.channel;
 	var audio_file = "Audio Files/" + dcMessage + ".mp3"
 	
-	var current_audio_files = ["kms", "theme", "godno", "lizardking", "lemonhead",
+	var current_audio_files =  ["kms", "theme", "godno", "lizardking", "lemonhead",
                                 "oof", "imfine", "lemonhead", "ryan_bitch", 
 								"sexuality", "idiot", "perfektenschlag", "perfektenschlag_left",
 								"perfektenschlag_right", "britney", "bankruptcy", "kelly_slut",
