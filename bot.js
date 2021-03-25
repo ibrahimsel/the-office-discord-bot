@@ -7,13 +7,6 @@ client.once('ready', () => {
 
 client.on('message', async message => {
     if (message.author.bot) return;
-
-    /*const fs = require('fs')
-    fs.readFile('scores.txt', (err, data) => {
-        if (err) throw err;
-        console.log(data.toString());
-    })
-    */
     var dcMessage = message.content;
     var voiceChannel = message.member.voice.channel;
     var audio_file = "Audio Files/" + dcMessage + ".mp3"
@@ -44,7 +37,6 @@ client.on('message', async message => {
         });
 
         dispatcher.on('finish', () => {
-            // message.channel.send("finished playing");
             voiceChannel.leave();
         });
 
@@ -52,9 +44,7 @@ client.on('message', async message => {
     }
     
     else if (current_audio_files.includes(dcMessage) && !message.member.voice.channel)
-    {
         message.channel.send("connect to a voice channel first");
-    }
     
     if (dcMessage.search("İ") != -1)
         dcMessage = dcMessage.replace(/İ/g, "I");
@@ -86,13 +76,6 @@ client.on('message', async message => {
                              "\nayy skeletonman";
 
     listMessage = listMessage.replace(/ /g, "-")
-    /*
-    if (dcMessage.search(/pam/i) != -1)
-        message.channel.send("Dunder Mifflin this is Pam");
-    
-    if (dcMessage.search(/dwight/i) != -1)
-        message.channel.send("Bears, beets, Battlestar Galactica");
-        */
     
     switch (dcMessage)
     {
@@ -108,7 +91,6 @@ client.on('message', async message => {
         case "!author":
             message.channel.send("\n*NAME: Ibrahim Sel\nJOB: Aspiring Artificial Intelligence Specialist*\n");
             break;
-    
     }
 });
 
